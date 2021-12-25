@@ -4,12 +4,6 @@
 #
 # Based on skeleton code by CSCI-B 551 Fall 2021 Course Staff
 
-# ACKNOWLEDMENT : I have implemented KNN from scratch previously in my Online Applied Machine Learning class by Prof. James Shanahan. (CSCI-P 556)
-#                 The IU Github link for the repository can be found at 
-#                 https://github.iu.edu/jshanah/I526_AML_Student/blob/master/Assignments/Unit-02_KNN_CIFAR10/HW02-KNN-CIFAR10-Boston.ipynb
-#                 Public Colab Link : https://colab.research.google.com/drive/1QMGIPRnZG7UxOwRBjnBFHaXRiYdJmCu3?usp=sharing
-
-
 import numpy as np
 
 
@@ -24,7 +18,7 @@ def euclidean_distance(x1, x2):
     # Euclidean_distance(x1, x2) = (x1 - x2)**2, which can be implemented using the norm 
     # method in the np.linalg package. 
     # The 'ord' parameter specifies the order of the norm, which in this case is 2.
-    return np.linalg.norm(x1 - x2, ord=2, axis=1)
+    return np.linalg.norm(x1 - x2, ord=2, axis=0)
     
 
 def manhattan_distance(x1, x2):
@@ -38,7 +32,7 @@ def manhattan_distance(x1, x2):
     # Manhattan_distance(x1, x2) = |x1 - x2|, which can be implemented using the norm 
     # method in the np.linalg package.
     # # The 'ord' parameter specifies the order of the norm, which in this case is 1.
-    return np.linalg.norm(x1 - x2, ord=1, axis=1)
+    return np.linalg.norm(x1 - x2, ord=1, axis=0)
     
 
 
@@ -178,7 +172,7 @@ def cross_entropy(y, p):
     m = y.shape[0]
     p = np.clip(p, 1e-15, 1 - 1e-15)
 
-    if len(np.unique(y)) > 2:
+    if len(np.unique(y, axis=1)) > 2:
         # Categorical Cross Entropy
         return (-1./m) * np.sum(y * np.log(p))
     else:
