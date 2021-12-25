@@ -1,6 +1,4 @@
-# Assignment - 4: Machine Learning.
-
-##### Author : Aashay Gondalia -- aagond
+# Machine Learning.
 
 ## Part 1 : K-Nearest Neighbours Classification.
 
@@ -42,14 +40,6 @@ PREDICT :
 - The KNN model is outstanding at predicting the variable with high accuracy. In multiple cases, the KNN model surpasses the performance (in terms of accuracy) of the SKlearn model. 
 - The whole test results are present in the html file in the repository.
 
-
-### 1.5 References
-
-I have implemented KNN from scratch previously in my Online Applied Machine Learning class by Prof. James Shanahan. (CSCI-P 556)
-
-The IU Github link for the repository can be found at https://github.iu.edu/jshanah/I526_AML_Student/blob/master/Assignments/Unit-02_KNN_CIFAR10/HW02-KNN-CIFAR10-Boston.ipynb
-
-Public Colab Link : https://colab.research.google.com/drive/1QMGIPRnZG7UxOwRBjnBFHaXRiYdJmCu3?usp=sharing
 
 
 ## Part 2 : Multilayer Perceptron Classification.
