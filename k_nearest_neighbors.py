@@ -1,8 +1,7 @@
 # k_nearest_neighbors.py: Machine learning implementation of a K-Nearest Neighbors classifier from scratch.
 #
-# Submitted by: Aashay Gondalia -- aagond
-#
-# Based on skeleton code by CSCI-B 551 Fall 2021 Course Staff
+# Author: Aashay Gondalia
+
 
 import numpy as np
 from utils import euclidean_distance, manhattan_distance

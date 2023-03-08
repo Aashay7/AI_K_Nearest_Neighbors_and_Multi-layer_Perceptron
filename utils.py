@@ -1,8 +1,8 @@
 # utils.py: Utility file for implementing helpful utility functions used by the ML algorithms.
 #
-# Submitted by: Aashay Gondalia -- aagond
-#
-# Based on skeleton code by CSCI-B 551 Fall 2021 Course Staff
+# Author : Aashay Gondalia
+
+
 
 import numpy as np
 

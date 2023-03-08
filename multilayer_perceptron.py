@@ -1,10 +1,6 @@
 # multilayer_perceptron.py: Machine learning implementation of a Multilayer Perceptron classifier from scratch.
 #
-# Submitted by: Aashay Gondalia -- aagond
-#
-# Based on skeleton code by CSCI-B 551 Fall 2021 Course Staff
-#
-# Reference : Neural Network from Scratch Book by Harrison Kinsley & Daniel Kukiela.
+# Author : Aashay Gondalia
 
 import numpy as np
 from utils import identity, sigmoid, tanh, relu, softmax, cross_entropy, one_hot_encoding
